@@ -5,19 +5,19 @@ $(document).ready(function(){
 	$('.bio-page').hide()
 	$('.code-page').hide()
 	
-	$('.bio').click(function(){
+	$("a.bio").click(function(){
 		$('.bio-page').show();
 		$('.contact-page').hide();
 		$('.code-page').hide();
 		});
 	
-	$('.contact').click(function(){
+	$("a.contact").click(function(){
 		$('.contact-page').show();
 		$('.bio-page').hide();
 		$('.code-page').hide();
 		});
 	
-	$('.code').click(function(){
+	$("a.code").click(function(){
 		$('.contact-page').hide();
 		$('.bio-page').hide();
 		$('.code-page').show()
@@ -26,10 +26,10 @@ $(document).ready(function(){
 </script>
 
 <body>
-<div class="sections"><div class="code">CODE</div></div>
-<div class="sections"><div class="bio">BIO</div></div>
-<div class="sections"><div class="contact">CONTACT</div></div>
-<div class="sections"><div class="cv"><%= link_to "CV", "/Hughes_Alexander_CV.pdf", :target => "_blank" %></div></div>
+<div class="sections"><a class="code">CODE</a></div>
+<div class="sections"><a class="bio">BIO</a></div>
+<div class="sections"><a class="contact">CONTACT</a></div>
+<div class="sections"><a class="cv"><%= link_to "CV", "/Hughes_Alexander_CV.pdf", :target => "_blank" %></a></div>
 <span class="stretch"></span>
 
 <div class="code-page">
@@ -40,11 +40,11 @@ $(document).ready(function(){
 	<p>I received my B.A. <em>magne cum laude</em> in <%= link_to "History", "http://www.brown.edu/academics/history/", :target => "_blank" %> and <%= link_to "Economics", "http://www.brown.edu/academics/economics/", :target => "_blank" %> from <%= link_to "Brown University", "http://brown.edu", :target => "_blank"  %> in 2010.</p>
 	<p>I focused on Early American and European Intellectual history, and still have an intense interest in art, philosophy, and policy, especially as it relates to cultural, political, and social structures.</p>
 	<p>In Economics, my coursework was significantly less abstract, and focused mostly on macroeconomics, economic growth, and some corporate finance.</p>
-	<p>While at Brown, I was the General Manager of <%= link_to "The Brown Daily Herald", "http://browndailyherald.com", :target => "_blank" %>.</p>
+	<p>While at Brown, I was a General Manager of <%= link_to "The Brown Daily Herald", "http://browndailyherald.com", :target => "_blank" %>.</p>
 	<p>My coding knowledge is self-taught, with lots of help from <%= link_to "piinecone", "http://www.piinecone.com", :target => "_blank" %>.</p>
 	<br>
 	<h4>Professional Experience</h4>
-	<p>After college, I worked for the Japanese investment bank <%= link_to "Nomura Securities", "http://www.nomura.com", :target => "_blank" %> following its <%= link_to "acquisition of Lehman Brother's international group assets", "http://www.bloomberg.com/apps/news?pid=newsarchive&sid=afptX8rfLwFo", :target => "_blank" %>. I worked on the Fixed Income Syndicate desk, helping clients raise capital in the USD debt capital markets.</p>
+	<p>After college, I worked for the Japanese investment bank <%= link_to "Nomura Securities", "http://www.nomura.com", :target => "_blank" %> following its <%= link_to "acquisition of Lehman Brother's international group assets", "http://www.theguardian.com/business/2008/sep/23/lehmanbrothers.banking1", :target => "_blank" %> as an Associate on the Fixed Income Syndicate desk, helping clients raise capital in the USD debt capital markets.</p>
 	<p>I also spent a year and a half working on creating a premium Ready-To-Drink alcoholic beverage with bourbon, rum, gin, and vodka bases.</p>
 	<p>For a complete view of my professional experience, you can <%= link_to "view my CV", "/Hughes_Alexander_CV.pdf", :target => "_blank" %>.</p>
 	<p></p>

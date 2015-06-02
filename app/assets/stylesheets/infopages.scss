@@ -29,6 +29,7 @@ textarea {
 
 a:hover {
     text-decoration:none;
+	cursor:pointer
 }​​
 
 /* typography */
@@ -64,6 +65,9 @@ h2 {
 	margin-right: auto;
 	text-align: center;
 	text-decoration:underline;
+	a {
+		color: inherit;;
+	}
 }
 
 .sections:hover {
