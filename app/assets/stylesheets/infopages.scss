@@ -2,13 +2,33 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-@import "bootstrap-sprockets";
-@import "bootstrap";
-
 /* universal */
 
 body {
-  padding-top: 10px;
+  padding:0;
+  margin:0;
+  background-color:#F8FAFF;
+  //background-color:#FCFCFD;
+  //background-color:#00297A;
+}
+
+header {
+	display:block;
+	font-family:"Helvetica";
+	font-weight:bold;
+	font-size:4.5em;
+	color:white;
+	background-color:#00297A;
+	margin-top:0;
+	margin-bottom:0;
+	.header-name {
+		margin-left:1%;
+		p {
+			margin-top:-1%;
+			margin-bottom:0%;
+			line-height:175%;
+		}
+	}
 }
 
 section {
@@ -27,9 +47,9 @@ textarea {
   margin-bottom: 10px;
 }
 
-a:hover {
+a {
     text-decoration:none;
-	cursor:pointer
+	cursor:pointer;
 }
 
 
@@ -38,6 +58,7 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Helvetica Neue';
   line-height: 250%;
+  margin-bottom: 8px;
 }
 
 h1 {
@@ -57,29 +78,26 @@ h2 {
 }
 
 .sections {
-	width: 24%;
+	padding:0;
+	width: 24.77%;
 	font-family: Courier;
-	font-size: 2em;
+	font-size: 1.5em;
 	vertical-align: top;
 	display: inline-block;
-	margin-left: auto;
-	margin-right: auto;
+	background:#ECECF3;
+	margin-top:0;
+	margin-bottom:0;
 	text-align: center;
 	text-decoration:none;
+	line-height:200%;
 	a {
-		color: inherit;;
+		color: inherit;
 	}
 }
 
 .sections:hover {
-	text-decoration:underline;
-	background:#ECECF3;
-	//color:white;
-}
-
-.name {
-	font-weight: bold;
-	font-size: 1.3em;
+	background:#DB4D4D;
+	color:white;
 }
 
 .stretch {
@@ -89,15 +107,58 @@ h2 {
 	line-height: 0
 }
 
+.bio-page {
+	font-family: 'Courier New';
+	//color:white;
+	margin-left: 5%;
+	margin-right: 8%;
+	font-size: 1.1em;
+	p {
+		text-indent:4%;
+		line-height:160%;
+	}
+	a {
+		color:#DB4D4D;
+		font-weight:bold;
+	}
+	a:hover {
+		color:white;
+		font-weight: bold;
+	}
+}
+
+#left {
+	float:left;
+	width:50%;
+}
+
+.name {
+	font-size: 1.5em;
+}
+
 .contact-info {
-	margin-left: 60%;
-	margin-top: 20%;
+	margin-left: 49.5%;
+	margin-top: 10%;
 	font-family: 'Courier';
+	//color:white;
+	font-size: 1.1em;
+	a {
+		color:#DB4D4D;
+	}
+	a:hover {
+		font-weight: bold;
+	}
+	p {
+		margin-top:3.5%;
+		margin-bottom:3.5%;
+	}
 }
 
 p {
-  font-size: 1.1em;
+  font-size: .9em;
   line-height: 125%;
+  margin-top:1%;
+  margin-bottom:1%;
 }
 
 ol {
