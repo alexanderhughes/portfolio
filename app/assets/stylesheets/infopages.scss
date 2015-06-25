@@ -170,9 +170,18 @@ h2 {
 	}
 }
 
+#right{
+	display:inline;
+	float:right;
+	width:48%;
+	margin-bottom:5%;
+}
+
 #left {
+	display:inline;
 	float:left;
-	width:50%;
+	width:48%;
+	margin-bottom:5%;
 }
 
 .name {
@@ -180,8 +189,8 @@ h2 {
 }
 
 .contact-info {
-	margin-left: 55%;
-	margin-top: 15%;
+	margin-left:45%;
+	margin-top: 10%;
 	font-family: 'Courier';
 	//color:white;
 	font-size: 1.1em;
