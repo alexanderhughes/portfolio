@@ -8,8 +8,6 @@ body {
   padding:0;
   margin:0;
   background-color:#F8FAFF;
-  //background-color:#FCFCFD;
-  //background-color:#00297A;
 }
 
 header {
@@ -52,6 +50,19 @@ a {
 	cursor:pointer;
 }
 
+table{
+    width: 90%;
+	border-spacing: 30px;
+}
+
+th {
+	//height: 500px;
+}
+
+td {
+    max-width: 35%;
+	vertical-align: top;
+}
 
 /* typography */
 
@@ -79,7 +90,7 @@ h2 {
 
 .sections {
 	padding:0;
-	width: 24.77%;
+	width: 24.75%;
 	font-family: Courier;
 	font-size: 1.5em;
 	vertical-align: top;
@@ -107,6 +118,38 @@ h2 {
 	line-height: 0
 }
 
+.code-page {
+	font-family: 'PT Mono';
+	margin-left: 5%;
+	margin-right: 8%;
+	font-size: .9em;
+	p {
+		line-height:125%;
+	}
+	a {
+		color:#DB4D4D;
+		font-weight:bold;
+	}
+	a:hover {
+		color:#800C0C;
+		font-weight: bold;
+	}
+	#overview {
+		margin-top: 2%;
+		margin-bottom:2%;
+	}
+	#project_desc {
+		width:50%;
+		float:left;
+		margin-bottom:5%;
+	}
+	#screenshot {
+		display:inline;
+		float:right;
+		margin-bottom: 5%;
+	}
+}
+
 .bio-page {
 	font-family: 'Courier New';
 	//color:white;
@@ -122,7 +165,7 @@ h2 {
 		font-weight:bold;
 	}
 	a:hover {
-		color:white;
+		color:#800C0C;
 		font-weight: bold;
 	}
 }

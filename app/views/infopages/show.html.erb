@@ -1,4 +1,4 @@
-<% provide(:title, "Alexander Hughes - Portfolio") %>
+<% provide(:title, "Alexander Hughes :: Portfolio") %>
 
 <script type="text/javascript">
 $(document).ready(function(){
@@ -34,16 +34,30 @@ $(document).ready(function(){
 <span class="stretch"></span>
 
 <div class="code-page">
-	<table>
-	<tr>
-		<td>Description</td>
-		<td>Screenshot</td>
-	</tr>
-	<tr>
-		<td>Description</td>
-		<td>Screenshot</td>
-	</tr>
-</table>
+	
+	<div id="overview">I am proficient in Ruby, Rails, Python, Javascript, jQuery, CSS, and HTML. Some of my projects are below.</div>
+	
+	<div id="project_desc">
+	<h3><%= link_to "Govrate.co", "http://www.govrate.co" %></h3>
+		<p><strong>This site is a work in progress!</strong> Please #link# contact me with any feedback or suggestions</p>
+		<p>Govrate.co is a project to increase government transparency and accountability. I wanted to create a web app that would allow people to find, rate, and review any service provided by the government at the cost of the taxpayer.</p>
+		<p>The site also maps the organizational hierarchy, and provides information about the entity's executive(s), including whether they are appointed or elected, and their salary, if available.</p>
+		<p>I decided to start with NYC, since it's usually my home, it has a dense population base exposed to many tax-funded entities, and a lot of data is available online by the city or state.</p>
+		<p>Some of the entities I started with include City and State agencies; post offices; DMV offices; subway, police, and fire stations; as well as recreational facilities such as parks.</p>
+		<p>The app is Ruby on Rails with a MongoDB database.</p>
+	</div>
+
+	<div id="screenshot"><%= image_tag "http://api.screenshotlayer.com/api/capture?access_key=d781d8f4a00c77a17c2b78f88a5d38b4&url=http://govrate.co", height: '400', width: '500' %></div>
+
+	<div id="project_desc">
+	<h3><%= link_to "Math Quiz", "http://www.mathquiz.co" %></h3>
+		<p>Math Quiz was the first Rails App I created.</p>
+		<p>When I was in college interviewing for finance and consulting jobs, they expected you to be sharp with your mental math. I wanted a quiz that I could set up to drill mental multiplication problems, where I could choose the factors and the length of the quiz, and it would give me a score.</p>
+		<p>When I started learning Ruby, it was the first program I wrote after finishing Chris Pine's tutorial #add link#. You can fin it in my github #here#.</p>
+		<p>When I started learning Rails, I wanted to try to convert that program into a Rails App. This was the result!</p>
+	</div>
+	
+	<div id="screenshot"><%= image_tag "http://api.screenshotlayer.com/api/capture?access_key=d781d8f4a00c77a17c2b78f88a5d38b4&url=http://www.mathquiz.co", height: '400', width: '500' %></div>
 </div>
 
 <div class="bio-page">
@@ -55,7 +69,7 @@ $(document).ready(function(){
 	<p>While at Brown, I was a General Manager of <%= link_to "The Brown Daily Herald", "http://browndailyherald.com", :target => "_blank" %>.</p>
 	<p>My coding knowledge is self-taught, with lots of help from <%= link_to "piinecone", "http://www.piinecone.com", :target => "_blank" %>.</p>
 	</div>
-	
+
 	<div id="right">
 	<h4>Professional Experience</h4>
 	<p>In 2010, I joined the Japanese investment bank <%= link_to "Nomura Securities", "http://www.nomura.com", :target => "_blank" %> in its first formal analyst class following its <%= link_to "acquisition of Lehman Brother's international group assets", "http://www.theguardian.com/business/2008/sep/23/lehmanbrothers.banking1", :target => "_blank" %>. I joined the Fixed Income Syndicate desk in New York, helping clients raise capital in the USD debt capital markets. I was promoted to Assoicate in April, 2012. I left Nomura in June, 2014.</p>
