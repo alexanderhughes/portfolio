@@ -37,6 +37,7 @@ $(document).ready(function(){
 	
 	<div id="overview">I am proficient in Ruby, Rails, Python, jQuery, CSS, and HTML, and with using SQL and NoSQL databases. I am also familiar with Javascript, Swift, and XCode. Some of my projects are below. For freelance work, please <%= link_to "contact me", root_path %>.</div>
 	
+	<div>
 	<div id="project_desc">
 	<h3><%= link_to "Govrate.co", "http://www.govrate.co", :target => "_blank" %></h3>
 		<p><strong>This site is a work in progress!</strong> Please <%= link_to "contact me", root_path %> with any feedback or suggestions.</p>
@@ -46,9 +47,10 @@ $(document).ready(function(){
 		<p>Some of the entities I started with include City and State agencies; post offices; DMV offices; subway, police, and fire stations; as well as recreational facilities such as parks. I wrote several crawlers to access this data and load it into my database.</p>
 		<p>The app is Ruby on Rails with a MongoDB database.</p>
 	</div>
-
+	</div>
+	<br>
+	<div>
 	<div id="screenshot"><%= image_tag "http://api.screenshotlayer.com/api/capture?access_key=d781d8f4a00c77a17c2b78f88a5d38b4&url=http://govrate.co", height: '400', width: '500' %></div>
-
 	<div id="project_desc">
 	<h3><%= link_to "Math Quiz", "http://www.mathquiz.co", :target => "_blank" %></h3>
 		<p>Math Quiz was the first Rails App I created.</p>
@@ -58,6 +60,8 @@ $(document).ready(function(){
 	</div>
 	
 	<div id="screenshot"><%= image_tag "http://api.screenshotlayer.com/api/capture?access_key=d781d8f4a00c77a17c2b78f88a5d38b4&url=http://www.mathquiz.co", height: '400', width: '500' %></div>
+	</div>
+	
 </div>
 
 <div class="bio-page">
