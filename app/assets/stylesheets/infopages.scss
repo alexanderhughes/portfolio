@@ -63,6 +63,36 @@ td {
     max-width: 35%;
 	vertical-align: top;
 }
+.sections {
+	padding:0;
+	width: 24.75%;
+	font-family: Courier;
+	font-size: 1.5em;
+	vertical-align: top;
+	//display: inline-block;
+	float:left;
+	background:#ECECF3;
+	margin-top:0;
+	margin-bottom:0;
+	text-align: center;
+	text-decoration:none;
+	line-height:225%;
+	a {
+		color: inherit;
+	}
+}
+
+.sections:hover {
+	background:#DB4D4D;
+	color:white;
+}
+
+.stretch {
+	width: 100%;
+	display: inline-block;
+	font-size: 0;
+	line-height: 0
+}
 
 /* typography */
 
@@ -86,36 +116,6 @@ h2 {
   text-align: center;
   font-weight: normal;
   color: #777;
-}
-
-.sections {
-	padding:0;
-	width: 24.75%;
-	font-family: Courier;
-	font-size: 1.5em;
-	vertical-align: top;
-	display: inline-block;
-	background:#ECECF3;
-	margin-top:0;
-	margin-bottom:0;
-	text-align: center;
-	text-decoration:none;
-	line-height:225%;
-	a {
-		color: inherit;
-	}
-}
-
-.sections:hover {
-	background:#DB4D4D;
-	color:white;
-}
-
-.stretch {
-	width: 100%;
-	display: inline-block;
-	font-size: 0;
-	line-height: 0
 }
 
 .code-page {
