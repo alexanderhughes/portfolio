@@ -35,17 +35,20 @@ $(document).ready(function(){
 
 <div class="code-page">
 	
-	<div id="overview">I am proficient in Ruby, Rails, Python, jQuery, CSS, and HTML, and with using SQL and NoSQL databases. I am also familiar with Javascript, Swift, and XCode. Some of my projects are below. For freelance work, please <%= link_to "contact me", root_path %>.</div>
+	<div id="overview">I am proficient in Ruby, Rails, Python, jQuery, CSS, and HTML, and with SQL and NoSQL databases. I am currently learning Javascript, Swift, and XCode. Some of my projects are below.</div>
+		
+	<div>For freelance work, please <%= link_to "contact me", root_path %>.</div>
 	
 	<div>
 	<div id="project_desc">
 	<h3><%= link_to "Govrate.co", "http://www.govrate.co", :target => "_blank" %></h3>
-		<p><strong>This site is a work in progress!</strong> Please <%= link_to "contact me", root_path %> with any feedback or suggestions.</p>
 		<p><%= link_to "Govrate.co", 'http://www.govrate.co', :target => "_blank" %> is a project to increase government transparency and accountability. I wanted to create a web app that would allow people to find, rate, and review any service provided by the government at the cost of the taxpayer.</p>
 		<p>The site also maps the organizational hierarchy, and provides information about the entity's executive(s), including whether they are appointed or elected, and their salary, if available.</p>
 		<p>I decided to start with NYC since it has a dense population base exposed to many tax-funded entities, a lot of data is available online by the city or state, and it's usually my home.</p>
 		<p>Some of the entities I started with include City and State agencies; post offices; DMV offices; subway, police, and fire stations; as well as recreational facilities such as parks. I wrote several crawlers to access this data and load it into my database.</p>
-		<p>The app is Ruby on Rails with a MongoDB database.</p>
+		<p><strong>Tools:</strong>Rails, MongoDB, Google Maps API</p>
+		<p><strong>Github:</strong><%= link_to "https://github.com/alexanderhughes/govreviews" %></p>
+		<p><strong>This site is a work in progress!</strong> Please <%= link_to "contact me", root_path %> with any feedback or suggestions.</p>
 	</div>
 	</div>
 	<br>
@@ -57,6 +60,8 @@ $(document).ready(function(){
 		<p>When I was in college interviewing for finance and consulting jobs, I wanted a quiz that I could set up to drill mental multiplication problems, where I could choose the factors and the length of the quiz, and it would give me a score.</p>
 		<p>When I started learning Ruby, it was the first program I wrote after finishing <%= link_to "Chris Pine's tutorial", 'https://pine.fm/LearnToProgram/', :target => "_blank" %>.</p>
 		<p>When I started learning Rails, I wanted to try to convert <%= link_to 'that program', 'https://github.com/alexanderhughes/Mental-Math-Quiz', :target => "_blank" %> into a Rails app. <%= link_to "Math Quiz", "http://www.mathquiz.co", :target => "_blank" %> is the result!</p>
+		<p><strong>Tools:</strong>Rails</p>
+		<p><strong>Github:</strong><%= link_to "https://github.com/alexanderhughes/multiplication_quiz" %></p>
 	</div>
 	
 	<div id="screenshot"><%= image_tag "http://api.screenshotlayer.com/api/capture?access_key=d781d8f4a00c77a17c2b78f88a5d38b4&url=http://www.mathquiz.co", height: '400', width: '500' %></div>
