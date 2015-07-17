@@ -97,8 +97,12 @@ td {
 .code-page {
 	font-family: 'PT Mono';
 	margin-left: 5%;
-	margin-right: 8%;
 	font-size: .9em;
+	table {
+		margin:0;
+		padding:0;
+		border-collapse:collapse;
+	}
 	p {
 		line-height:125%;
 	}
@@ -115,7 +119,7 @@ td {
 		margin-bottom:2%;
 	}
 	#project_desc {
-		width:50%;
+		width:95%;
 		float:left;
 		margin-bottom:5%;
 	}
