@@ -94,13 +94,17 @@ td {
 	line-height: 0
 }
 
+#overview {
+  line-height:1.7em;
+}
+
 .round {
   border-style:solid;
   border-radius:4px;
   border-width:thin;
   border-color:#97A4C0;
   background-color:#ECEEF3;
-  padding:3px;
+  padding:2px;
 }
 
 .code-page {
