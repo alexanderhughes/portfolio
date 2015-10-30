@@ -118,6 +118,7 @@ td {
 	font-family: "helvetica neue", helvetica, arial, sans-serif;
   letter-spacing:0.03em;
 	font-size: 1.1em;
+  padding-bottom:2%;
   #overview {
     padding-left:2.5%;
     padding-right:2.5%;
@@ -132,7 +133,8 @@ td {
     margin-right:2.5%;
     background:#ECECF3;
 	}
-  .project:hover{
+  .project:hover {
+    background:#DDDDDD;
   }
 	p {
 		line-height:145%;
@@ -170,10 +172,9 @@ td {
 
 @media only screen and (max-width: 1026px) {
   #project_desc {
-    width:100%;
+    width:95%;
   }
   #screenshot {
-    float:left;
   }
 }
 
