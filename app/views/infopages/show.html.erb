@@ -35,49 +35,40 @@ $(document).ready(function(){
 
 <div class="code-page">
 	
-  <div id="overview">I am proficient in <span class="round">Ruby</span>, <span class="round">Rails</span>, <span class="round">Python</span>, <span class="round">jQuery</span>, <span class="round">CSS</span>, and <span class="round">HTML</span>, and with <span class="round">SQL</span> and <span class="round">NoSQL</span> databases. I am currently learning <span class="round">Javascript</span> and <span class="round">Swift</span>.</div>
+  <div id="overview">
+    <div>I am proficient in <span class="round">Ruby</span>, <span class="round">Rails</span>, <span class="round">Python</span>, <span class="round">jQuery</span>, <span class="round">CSS</span>, and <span class="round">HTML</span>, and with <span class="round">SQL</span> and <span class="round">NoSQL</span> databases. I am currently learning <span class="round">Javascript</span> and <span class="round">Swift</span>.</div>
 		
-	<div>For freelance work, please <%= link_to "contact me", root_path %>.</div>
+	  <div>For freelance work, please <%= link_to "contact me", root_path %>.</div>
+  </div>
 	
-	<table>
-	<tr>
-	<div>
-		<td>
+	<div class="project">
+    <div class="project_title"><%= link_to "GOOD Project Literacy", "http://magazine.good.is/guides/project-literacy", :target => "_blank" %></div>
 		<div id="project_desc">
-		<h3><%= link_to "GOOD Project Literacy", "http://magazine.good.is/guides/project-literacy", :target => "_blank" %></h3>
 			<p><%= link_to "Project Literacy", 'http://magazine.good.is/guides/project-literacy', :target => "_blank" %> is a collaboration between GOOD and Pearson to support literacy projects.</p>
       <p>The site allows users to navigate through an interactive map that filters opportunies for that region.</p>
       <p>The code uses some logic to determine whether opportunies are listed by the county, state, country, or continent level and renders the list accordingly.</p>
 			<p><strong>Tools: </strong>Rails, Backbone, JS, JVectorMaps</p>
 		</div>
-		</td>
-		<td>
+    <div id="screenshot"><%= link_to (image_tag "http://api.screenshotlayer.com/api/capture?access_key=d781d8f4a00c77a17c2b78f88a5d38b4&url=http://magazine.good.is/guides/project-literacy", height: '400', width: '500'), "http://magazine.good.is/guides/project-literacy", :target => "_blank" %></div>
 	</div>
-	<div id="screenshot"><%= link_to (image_tag "http://api.screenshotlayer.com/api/capture?access_key=d781d8f4a00c77a17c2b78f88a5d38b4&url=http://magazine.good.is/guides/project-literacy", height: '400', width: '500'), "http://magazine.good.is/guides/project-literacy", :target => "_blank" %></div>
-		</td>
-	</tr>
-  
-	<tr>
-	<div>
-		<td>
+
+  <div class="line_space"></div>
+
+	<div class="project">
+    <div class="project_title"><%= link_to "Doppler Labs", "http://wp.dopplerlabs.com", :target => "_blank" %></div>
 		<div id="project_desc">
-		<h3><%= link_to "Doppler Labs", "http://wp.dopplerlabs.com", :target => "_blank" %></h3>
 			<p><%= link_to "Doppler Labs", 'http://wp.dopplerlabs.com', :target => "_blank" %> is a consumer electronics company that makes DUBS Acoustic Filters and Here Active Listening.</p>
-			<p>After moving their site to Wordpress, Doppler Labs asked me to build out the site's CMS and add several templates and pages for them. </p>
+			<p>After moving their site to Wordpress, Doppler Labs asked me to build out the site's CMS and add several templates and pages for them.</p>
 			<p><strong>Tools: </strong>PHP, Wordpress</p>
 		</div>
-		</td>
-		<td>
+  	<div id="screenshot"><%= link_to (image_tag "http://api.screenshotlayer.com/api/capture?access_key=d781d8f4a00c77a17c2b78f88a5d38b4&url=http://wp.dopplerlabs.com/about/", height: '400', width: '500'), "http://wp.dopplerlabs.com", :target => "_blank" %></div>
 	</div>
-	<div id="screenshot"><%= link_to (image_tag "http://api.screenshotlayer.com/api/capture?access_key=d781d8f4a00c77a17c2b78f88a5d38b4&url=http://wp.dopplerlabs.com/about/", height: '400', width: '500'), "http://wp.dopplerlabs.com", :target => "_blank" %></div>
-		</td>
-	</tr>
-	
-	<tr>
-	<td>
-	<div>
+  
+  <div class="line_space"></div>
+
+	<div class="project">
+    <div class="project_title"><%= link_to "OurGov.io", "http://www.ourgov.io", :target => "_blank" %></div>
 		<div id="project_desc">
-		<h3><%= link_to "OurGov.io", "http://www.ourgov.io", :target => "_blank" %></h3>
 			<p><%= link_to "OurGov.io", 'http://www.ourgov.io', :target => "_blank" %> is a project to allow governments to collect feedback from their constituents. The web app allows people to find, rate, and review government services and agencies.</p>
 			<p>The site also maps the organizational hierarchy, and incorporates OpenData to provide information about the entity's executive(s), including whether they are appointed or elected, their salary, etc.</p>
 			<p>I decided to start with NYC since it has a dense population base exposed to many public entities with a lot of data available online by the city or state.</p>
@@ -86,18 +77,14 @@ $(document).ready(function(){
 			<p><strong>Tools: </strong>Rails, MongoDB, Google Maps API</p>
 			<p><strong>Github: </strong><%= link_to "https://github.com/alexanderhughes/govreviews" %></p>
 		</div>
+  	<div id="screenshot"><%= link_to (image_tag "OurGov_Logo2.png", height: '400', width: '500'), "http://govrate.co", :target => "_blank" %></div>
 	</div>
-	</td>
-	
-	<br>
-	<td>
-	<div id="screenshot"><%= link_to (image_tag "OurGov_Logo2.png", height: '400', width: '500'), "http://govrate.co", :target => "_blank" %></div>
-	</td>
-	</tr>
-	<tr>
-		<td>
+
+  <div class="line_space"></div>
+  
+	<div class="project">
+    <div class="project_title"><%= link_to "Math Quiz", "http://www.mathquiz.co", :target => "_blank" %></div>
 		<div id="project_desc">
-		<h3><%= link_to "Math Quiz", "http://www.mathquiz.co", :target => "_blank" %></h3>
 			<p>Math Quiz was the first Rails App I created.</p>
 			<p>When I was in college interviewing for finance and consulting jobs, I wanted a quiz that I could set up to drill mental multiplication problems, where I could choose the factors and the length of the quiz, and it would give me a score.</p>
 			<p>When I started learning Ruby, it was the first program I wrote after finishing <%= link_to "Chris Pine's tutorial", 'https://pine.fm/LearnToProgram/', :target => "_blank" %>.</p>
@@ -105,12 +92,8 @@ $(document).ready(function(){
 			<p><strong>Tools: </strong>Rails</p>
 			<p><strong>Github: </strong><%= link_to "https://github.com/alexanderhughes/multiplication_quiz" %></p>
 		</div>
-	</td>
-	<td>
-		<div id="screenshot"><%= link_to (image_tag "http://api.screenshotlayer.com/api/capture?access_key=d781d8f4a00c77a17c2b78f88a5d38b4&url=http://www.mathquiz.co", height: '400', width: '500'), "http://www.mathquiz.co", :target => "_blank" %></div></td>
-	</tr>
-	</table>
-	
+		<div id="screenshot"><%= link_to (image_tag "http://api.screenshotlayer.com/api/capture?access_key=d781d8f4a00c77a17c2b78f88a5d38b4&url=http://www.mathquiz.co", height: '400', width: '500'), "http://www.mathquiz.co", :target => "_blank" %></div>
+  </div>
 </div>
 
 <div class="bio-page">
