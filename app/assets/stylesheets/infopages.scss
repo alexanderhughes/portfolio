@@ -46,12 +46,12 @@ textarea {
 }
 
 a {
-    text-decoration:none;
+  text-decoration:none;
 	cursor:pointer;
 }
 
 table{
-    width: 90%;
+  width: 90%;
 	border-spacing: 30px;
 }
 
@@ -104,12 +104,13 @@ td {
   border-width:thin;
   border-color:#97A4C0;
   background-color:#ECEEF3;
-  padding:2px;
+  padding: 3px 12px;
+  font-size: 0.8em;
 }
 
 .code-page {
 	font-family: "helvetica neue", helvetica, arial, sans-serif;
-  letter-spacing:0.05em;
+  letter-spacing:0.03em;
 	margin-left: 5%;
 	font-size: 1.1em;
 	table {
@@ -118,7 +119,9 @@ td {
 		border-collapse:collapse;
 	}
 	p {
-		line-height:125%;
+		line-height:145%;
+    padding-top:5px;
+    padding-bottom:5px;
 	}
 	a {
 		color:#DB4D4D;
