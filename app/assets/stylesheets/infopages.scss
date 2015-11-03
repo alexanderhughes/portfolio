@@ -124,15 +124,13 @@ td {
     padding-left:5%;
     padding-right:5%;
   }
-  .line_space {
-    padding-top:2%;
-  }
 	.project {
-    display:inline-block;
-    padding-top:1.5%;
-    margin-left:5%;
-    margin-right:5%;
-    background:#ECECF3;
+    display: block;
+    padding: 48px;
+    overflow: hidden;
+    width: 90%;
+    margin: 0 auto 48px auto;
+    background: #ECECF3;
 	}
   .project:hover {
     background:#DDDDDD;
@@ -155,28 +153,19 @@ td {
 		margin-bottom:2%;
 	}
   .project_title {
-    padding-left:2.5%
   }
-	#project_desc {
+	.project-desc {
     width:50%;
-		float:left;
     display:inline-block;
-    padding-left:2.5%
+    vertical-align:top;
 	}
-	#screenshot {
+	.screenshot {
     float:right;
-    padding-right: 2.5%;
-		padding-bottom: 2.5%;
-    display:inline-block;
+    .project-image {
+      height:400px;
+      width:500px;
+    }
 	}
-}
-
-@media only screen and (max-width: 1026px) {
-  #project_desc {
-    width:95%;
-  }
-  #screenshot {
-  }
 }
 
 .bio-page {
@@ -293,3 +282,4 @@ ul {
   color: #fff;
   text-decoration: none;
 }
+
